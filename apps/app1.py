@@ -58,12 +58,12 @@ class oligo():
         return Tm
 
 
-
 layout = html.Div([
     html.Div([
-        html.H2('Design primers for site-directed mutagenesis protocols'),
+        html.H2('Design primers for site-directed mutagenesis protocols', style=style.H2_style),
         html.P('Primer design')
-        ], style=style.H2_style),
+        ], style={'padding-left':'120px'}
+    ),
     html.Div([
         dcc.Input(
             id='primer',
@@ -86,7 +86,7 @@ layout = html.Div([
         html.H2(id='primer-out'),
         html.H2(id='Tm_calc'),
         html.H2(id='GC_per'),
-        html.H2(id='primer_size')
+        html.H2(id='primer_size'),
         ], style={'padding-left':'140px'})
 ])
 #Input print
