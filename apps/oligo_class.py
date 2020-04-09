@@ -1,9 +1,8 @@
 
 class oligo():
     """Functions for characterization of site-directed mutagenesis primers"""
-    def __init__(self, primer, mutations):
+    def __init__(self, primer):
         self._primer = self.prep(primer)
-        self._mutations = mutations
 
     def prep(self, primer):
         """
@@ -62,13 +61,13 @@ class oligo():
         """
         # primer = self._primer
         # print(primer)
-        gc = oligo(self._primer, self._mutations).comp()
+        gc = oligo(self._primer).comp()
         size = len(self._primer)
         gc_content = round(gc / size * 100)
         return gc_content
 
 
-    def Tm_temp(self):
+    def Tm_temp(self, mutations):
         """
         Calcualtes Tm using Strategene site-directed mutagenesis formula
 
@@ -76,7 +75,8 @@ class oligo():
         :param mutations: Integer value representing total number of mutations to create
         :return: Float value represent Tm (in C) of primer
         """
-        gc_content = oligo(self._primer, self._mutations).content()
+        self._mutations = mutations
+        gc_content = oligo(self._primer).content()
         Tm= 81.5 + ((0.41 * gc_content) - ((675 / (len(self._primer))) - self._mutations))
         Tm = round(Tm, 1)
         return Tm
@@ -85,10 +85,10 @@ if __name__ == "__main__":
     primer = 'ATGgcgcgcgcgcgcgccc'
     mutations = 3
 
-    seq = oligo(primer, mutations)
+    seq = oligo(primer)
     print(seq._primer)
     print('Comp', seq.comp())
     print('R', seq.R_lockdown())
     print('F', seq.F_lockdown())
     print('Content', seq.content())
-    print('TM', seq.Tm_temp())
+    print('TM', seq.Tm_temp(mutations))
