@@ -4,7 +4,7 @@ from dash.dependencies import Input, Output
 
 import style
 from app import app
-from apps import home, app1, app2
+from apps import home, app1#, app2
 
 app.layout = html.Div([
     html.Div([
@@ -22,11 +22,12 @@ app.layout = html.Div([
 
 @app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
+
 def display_page(pathname):
     if pathname == '/app1':
-         return app1.layout
-    elif pathname == '/app2':
-         return app2.layout
+        return app1.layout
+    # elif pathname == '/app2':
+    #      return app2.layout
     else:
         return home.layout
 
