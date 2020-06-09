@@ -17,7 +17,7 @@ layout = html.Div([
     html.Div([
         dcc.Input(
             id='primer',
-            #value='',
+            value='',
             style={'fontSize':20, 'width':'40%'}
             ),
         dcc.Input(

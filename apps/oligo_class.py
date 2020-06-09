@@ -83,7 +83,7 @@ class oligo():
 
 if __name__ == "__main__":
     primer = 'ATGgcgcgcgcgcgcgccc'
-    mutations = 3
+    mutations = 2
 
     seq = oligo(primer)
     print(seq._primer)
