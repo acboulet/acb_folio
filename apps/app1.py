@@ -8,6 +8,10 @@ from app import app
 from apps.oligo_class import oligo
 import style
 
+# primer = 'atg'
+# primer = oligo(primer)
+# print(primer.Tm_temp(3))
+
 layout = html.Div([
     html.Div([
         html.H2('Design primers for site-directed mutagenesis protocols', style=style.H2_style),
@@ -17,7 +21,7 @@ layout = html.Div([
     html.Div([
         dcc.Input(
             id='primer',
-            value='',
+            #value='',
             style={'fontSize':20, 'width':'40%'}
             ),
         dcc.Input(
@@ -39,6 +43,30 @@ layout = html.Div([
         html.H2(id='primer_size'),
         ], style={'padding-left':'140px'})
 ])
+
+
+# # Call back functions
+# @app.callback(
+#     [Output('primer-out', 'children'),
+#      Output('Tm_calc', 'children'),
+#      Output('GC_per', 'children'),
+#      Output('primer_size', 'children')],
+#     # [Input('primer', 'value'),
+#     #  Input('mutate', 'value')]
+#     [Input('submit-button', 'n_clicks')],
+#     [State('primer', 'value'),
+#      State('mutate', 'value')]
+#     )
+# def update_Tm(n_clicks, primer, mutate):
+#     print(n_clicks)
+#     primer = oligo(primer)
+#     mutations = int(mutate)
+#     return ('{} was input'.format(primer._primer),
+#             'Tm primer is: ' + str(primer.Tm_temp(mutations)) + '\xb0' + 'C',
+#             'Primer GC% is: ' + str(primer.content()) + '%',
+#             'Primer size is ' + str(len(primer._primer)) + 'bp'
+#             )
+
 
 
 #Input print
