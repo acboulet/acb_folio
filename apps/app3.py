@@ -3,6 +3,7 @@ import dash_table
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, State
+import plotly.graph_objects as go
 import pandas as pd
 
 from app import app
@@ -27,7 +28,7 @@ layout = html.Div([
             ),
         dcc.Input(
             id='target',
-            value='T',
+            value='175',
             style={'fontSize':20, 'width':'5%'}
             ),
         html.Button(
@@ -39,15 +40,14 @@ layout = html.Div([
                 ], style={'padding-left':'120px'}),
     html.Div([
         html.H6(id='SDM'),
-        dash_table.DataTable(id='SDM_table')
+        dcc.Graph(id='SDM_table')
     ])
 ])
 
 # Call back function for SDM mutation
 @app.callback(
-    Output('SDM', 'children'),
-        #Output('SDM_table', 'table')
-        
+    [Output('SDM', 'children'),
+        Output('SDM_table', 'figure')],        
     [Input('submit-button', 'n_clicks')],
     [State('primer', 'value'), 
         State('target', 'value'),
@@ -55,7 +55,17 @@ layout = html.Div([
         ]
 )
 def output_SDM(n_clicks, cDNA, target_residue, mutant_codon):
-    result = primer_main(cDNA, int(target_residue), mutant_codon)
+    print(target_residue)
+    target_residue = int(target_residue)
+    result = primer_main(cDNA, target_residue, mutant_codon)
     mutant_string = result[1][1] + str(target_residue) + result[2][1]
     df = pd.DataFrame.from_records(result[0])
-    return(mutant_string)
+    fig = go.Figure(data=[go.Table(
+        header=dict(values=['For_primer', 'Tm (celsius)', 'GC%', 'length', 'Rev_primer'],
+                    fill_color='paleturquoise',
+                    align='left'),
+        cells=dict(values=[df.seq, df.Tm, df.GC, df.bp, df.rev],
+                    fill_color='lavender',
+                    align='left'))
+    ])
+    return mutant_string, fig
