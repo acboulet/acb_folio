@@ -1,9 +1,7 @@
 # import biopython
 from Bio.Seq import Seq
 from Bio.SeqUtils import GC
-
-
-
+import pandas as pd
 
 def primer_main(cDNA, target_residue, mutant_codon):
     """
@@ -40,10 +38,16 @@ def primer_main(cDNA, target_residue, mutant_codon):
     
     primer = cDNA[start_bp-18 : start_bp+3+18]
     mut_primer = primer[:18] + mutant_codon + primer[21:]
+    mut_primer = Seq(mut_primer)
     result = Tm_calc(mut_primer, no_mutations)
     result2 = check_lockdown(result)
     cleaned_result2 = remove_duplicates(result2)
-    return(cleaned_result2, str(codon), mutant_codon)
+    # Converting using BioSeq for easier analysis
+    codon = Seq(codon)
+    endo_codon = [str(codon), str(Seq.translate(codon))]
+    mut_codon = Seq(mutant_codon)
+    mutated_codon = [str(mut_codon), str(Seq.translate(mut_codon))]
+    return(cleaned_result2, endo_codon, mutated_codon)
 
 
 # generate a list of every primer sequence that has a Tm between 78 and 82
@@ -78,7 +82,8 @@ def Tm_calc(sequence, mutations, good_primers = None):
     elif Tm <= 82:
         primer_db = {}
         primer_db['GC'] = round(primer_GC, 1)
-        primer_db['seq'] = sequence
+        primer_db['rev'] = str(sequence.reverse_complement())
+        primer_db['seq'] = str(sequence)
         primer_db['Tm'] = round(Tm, 2)
         primer_db['bp'] = len(sequence)
         good_primers.append(primer_db)
@@ -124,19 +129,19 @@ def remove_duplicates(primer_list):
         if not_found:
             cleaned_primers.append(item)
     return cleaned_primers
-# result = Tm_calc(mut_primer, no_mutations)
-# result2 = check_lockdown(result)
-# print(len(result))
-# print(len(result2))
+
 
 if __name__ == "__main__":
-    #accept the following
+    # accept the following
     # Seq is Paul_Pic2
     sequence = 'ATGGAGTCCAATAAACAACCACGTAAAATCCAATTATATACGAAAGAGTTTTATGCCACATGTACCTTAGGTGGTATAATTGCGTGCGGTCCAACACATTCTTCGATCACTCCACTAGATCTTGTCAAATGTAGGCTACAGGTCAATCCCAAGTTGTATACTTCAAACTTACAAGGGTTCCGTAAGATTATAGCTAATGAAGGCTGGAAGAAAGTATACACTGGGTTTGGTGCTACATTCGTCGGATATTCGCTACAAGGTGCAGGTAAGTATGGTGGTTATGAGTATTTCAAGCATTTGTATTCTAGTTGGTTAAGTCCTGGTGTCACTGTGTACTTGATGGCCTCAGCGACCGCTGAATTCCTCGCTGATATCATGTTGTGCCCATTTGAAGCTATTAAAGTGAAACAGCGGACTACTATGCCGCCCTTTTGCAATAACGTTGTTGATGGATGGAAAAAAATGTATGCAGAAAGTGGAGGTATGAAAGCATTTTATAAAGGTATTGTTCCCCTATGGTGCAGACAGATTCCTTACACAATGTGTAAGTTTACCTCATTCGAAAAAATTGTTCAAAAAATATACAGTGTTTTACCTAAAAAGAAAGAAGAAATGAACGCATTACAGCAAATATCAGTCAGTTTTGTAGGTGGTTATCTGGCAGGTATATTATGTGCTGCAGTCTCACATCCTGCAGACGTTATGGTTTCCAAGATCAATAGCGAAAGAAAGGCCAACGAGTCCATGTCTGTAGCCTCTAAAAGAATATATCAAAAAATTGGCTTTACTGGGTTGTGGAATGGGTTAATGGTGAGAATTGTCATGATCGGTACTTTGACAAGTTTCCAATGGCTAATTTACGATTCGTTCAAGGCTTATGTAGGCTTACCAACCACCGGTTAG '
-    #sequence = Seq(sequence)
 
     target_residue = 175
     mutant_codon = 'ATG'
     result3 = primer_main(sequence, target_residue, mutant_codon)
-    for item in result3[0]:
-        print(item)
+    df = pd.DataFrame.from_records(result3[0])
+    print(df.head)
+    # for item in result3[0]:
+    #     print(item)
+    # print(result3[1])
+    # print(result3[2])
