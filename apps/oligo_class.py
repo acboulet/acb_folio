@@ -77,7 +77,7 @@ class oligo():
         """
         self._mutations = mutations
         gc_content = oligo(self._primer).content()
-        Tm= 81.5 + ((0.41 * gc_content) - ((675 / (len(self._primer))) - self._mutations))
+        Tm= 81.5 + (0.41 * gc_content) - (675 / ((len(self._primer)) - self._mutations))
         Tm = round(Tm, 1)
         return Tm
 
