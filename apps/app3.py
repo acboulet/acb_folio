@@ -18,18 +18,21 @@ layout = html.Div([
     html.Div([
         dcc.Input(
             id='primer',
-            #value='---',
-            style={'fontSize':20, 'width':'40%'}
+            #value='',
+            placeholder='Paste gene sequence here',
+            style={'fontSize':20, 'width':'40%', 'height':'25%'}
             ),
         dcc.Input(
             id='mutant',
-            value='M',
-            style={'fontSize':20, 'width':'5%'}
+            #value='mutant codon',
+            placeholder='New codon',
+            style={'fontSize':20, 'width':'10%'}
             ),
         dcc.Input(
             id='target',
-            value='175',
-            style={'fontSize':20, 'width':'5%'}
+            #value='target residue',
+            placeholder='Target residue',
+            style={'fontSize':20, 'width':'10%'}
             ),
         html.Button(
             id='submit-button',
