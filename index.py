@@ -2,18 +2,44 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-import style
 from app import app
-from apps import home, app1#, app2
+from apps import home, app1, app3#, app2
+
+A_style={'paddingRight':'30px',
+        'color':'#202020',
+        'paddingLeft':'100px',
+        'float':'left',
+        'fontSize': '24px',
+        'text-decoration':'none',
+        'font-variant':'small-caps',
+        'padding-top': '3px'
+        }
+
+header_style={'fontSize': '32px',
+        'font-weight':'600',
+        'text-transform': 'uppercase',
+        'padding-left':'60px',
+        'text-align':'Middle',
+        'paddingTop':'5px',
+        #'margin-top': '5px',
+        #'margin-bottom': '5px',
+        #'margin':'10px',
+        }
+
+Nav_style={'background-color': '#DFB887',
+        'height': '35px',
+        'width': '100%',
+        'opacity': '.9',
+        'margin-bottom': '10px'}
 
 app.layout = html.Div([
     html.Div([
-    html.H1('Aren\'s Data Science Portfolio', className='logo', style=style.H1_style),
-    html.Nav(className = "nav nav-pills", style=style.Nav_style,
+    html.H2('Aren\'s Data Science Portfolio', className='logo', style=header_style ),
+    html.Nav(className = "nav nav-pills", style=Nav_style, 
         children=[
-            html.A('Home', className="home", href='/', style=style.A_style),
-            html.A('SDM Calculator', className="nav-stocker", href='/app1', style=style.A_style),
-            html.A('Stock chart', className="nav-DNA", href='/app2', style=style.A_style)]),
+            html.A('Home', className="home", href='/', style=A_style ),
+            html.A('SDM Calculator', className="nav-stocker", href='/app1',style=A_style),
+            html.A('SDM Predictor', className="nav-DNA", href='/app3', style=A_style)]),
             ],style={'background-color':'#9c805e',
                         'height':'105px'}),
     dcc.Location(id='url', refresh=False),
@@ -26,8 +52,8 @@ app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/app1':
         return app1.layout
-    # elif pathname == '/app2':
-    #      return app2.layout
+    elif pathname == '/app3':
+        return app3.layout
     else:
         return home.layout
 

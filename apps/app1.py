@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output, State
 
 from app import app
 from apps.oligo_class import oligo
-import style
+
 
 # primer = 'atg'
 # primer = oligo(primer)
@@ -14,14 +14,14 @@ import style
 
 layout = html.Div([
     html.Div([
-        html.H2('Design primers for site-directed mutagenesis protocols', style=style.H2_style),
-        html.P('Primer design')
+        html.H3('Design primers for site-directed mutagenesis protocols',),
+        html.H4('Primer design')
         ], style={'padding-left':'120px'}
     ),
     html.Div([
         dcc.Input(
             id='primer',
-            #value='',
+            value='---',
             style={'fontSize':20, 'width':'40%'}
             ),
         dcc.Input(
@@ -37,10 +37,10 @@ layout = html.Div([
             )
                 ], style={'padding-left':'120px'}),
     html.Div([
-        html.H2(id='primer-out'),
-        html.H2(id='Tm_calc'),
-        html.H2(id='GC_per'),
-        html.H2(id='primer_size'),
+        html.H6(id='primer-out'),
+        html.H6(id='Tm_calc'),
+        html.H6(id='GC_per'),
+        html.H6(id='primer_size'),
         ], style={'padding-left':'140px'})
 ])
 
