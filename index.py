@@ -39,7 +39,7 @@ app.layout = html.Div([
         children=[
             html.A('Home', className="home", href='/', style=A_style ),
             html.A('SDM Calculator', className="nav-stocker", href='/app1',style=A_style),
-            html.A('SDM predictor', className="nav-DNA", href='/app3', style=A_style)]),
+            html.A('SDM Predictor', className="nav-DNA", href='/app3', style=A_style)]),
             ],style={'background-color':'#9c805e',
                         'height':'105px'}),
     dcc.Location(id='url', refresh=False),
