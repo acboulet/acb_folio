@@ -40,23 +40,25 @@ layout = html.Div([
         ], style={'padding-left':'120px', 'padding-right':'120px'}
     ),
     html.Div([
-        dcc.Input(
+        dcc.Textarea(
             id='primer',
             #value='',
             placeholder='Paste gene sequence here',
-            style={'fontSize':20, 'width':'40%', 'height':'25%'}
-            ),
+            style={'fontSize':20, 'width':'60%', 'height':'100px'}
+            )
+        ], style={'padding-left':'120px'}),
+    html.Div([
         dcc.Input(
             id='mutant',
             #value='mutant codon',
             placeholder='New codon',
-            style={'fontSize':20, 'width':'10%'}
+            style={'fontSize':20, 'width':'20%'}
             ),
         dcc.Input(
             id='target',
             #value='target residue',
             placeholder='Target residue',
-            style={'fontSize':20, 'width':'10%'}
+            style={'fontSize':20, 'width':'20%'}
             ),
         html.Button(
             id='submit-button',

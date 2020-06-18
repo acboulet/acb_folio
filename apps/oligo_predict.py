@@ -30,7 +30,6 @@ def primer_main(cDNA, target_residue, mutant_codon):
     # The required +2 means it will accept the entire target codon
     cDNA = cDNA.strip().lower()
     cDNA = ''.join(cDNA.split()) # Process the cDNA by making all lower, and remove all whitespace
-    print(cDNA)
     start_bp = (target_residue-1)*3
     codon = cDNA[start_bp : start_bp+3]
     # Calculates number of mutations designed to be inserted
