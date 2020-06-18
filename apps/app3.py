@@ -74,7 +74,6 @@ layout = html.Div([
         dcc.Graph(id='SDM_table')
     ]),
     html.Div([
-        html.Br(),
         html.H6('Choosing your primer',),
         html.P("""This script will provide you a list of potential primers, and you will have to choose one set for your own work. 
         The highest priority is to ensure that your mutant codon is close to the middle of the primer. This provides optimal binding 
