@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 import pandas as pd
 
-from app import app
+from index import app
 from apps.oligo_predict import primer_main
 
 layout = html.Div([

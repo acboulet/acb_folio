@@ -1,8 +1,21 @@
+import dash
+
+
+#Pulling dash v2.0 css from chriddyp on codepen
+# Will try to make my own sometime in the future, but can adjust anything directly in the future.
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = dash.Dash(__name__,
+                external_stylesheets=external_stylesheets)
+server = app.server
+app.config.suppress_callback_exceptions = True
+
+
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-from app import app
+#from app import app
 from apps import home, app1, app3#, app2
 
 A_style={'paddingRight':'30px',
@@ -58,4 +71,5 @@ def display_page(pathname):
         return home.layout
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8080)
+    app.run_server(debug=True, #port=8080
+    )
