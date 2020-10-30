@@ -29,7 +29,7 @@ layout = html.Div([
         html.H6('Links'),
     ], className='six columns'),
     html.Div([
-        # TODO center image
+        # Need to center image
         html.Img(src='assets/portrait.png')        
     ], className='six columns')
 ], style={'padding-left':'120px'}

@@ -91,9 +91,6 @@ layout = html.Div([
 ]) #First div
 
 # Call back function for SDM mutation
-# Will adjust when it receives a button click as input, and use whateverthe state value of the TextArea, and two Input areas are above
-# Input order: button, cDNA seq, target residue, and mutant codon
-# Output order is the point mutant descriptor, then the table with all possible primers
 @app.callback(
     [Output('SDM', 'children'),
         Output('SDM_table', 'figure')],        

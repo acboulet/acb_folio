@@ -45,8 +45,6 @@ Nav_style={'background-color': '#DFB887',
         'opacity': '.9',
         'margin-bottom': '10px'}
 
-# Shows H2 title for page
-# Nav allows for navigation by using .A fo each app.  href needs to be adjusted when new apps are added or removed
 app.layout = html.Div([
     html.Div([
     html.H2('Aren\'s Data Science Portfolio', className='logo', style=header_style ),
@@ -61,7 +59,6 @@ app.layout = html.Div([
     html.Div(id='page-content')
 ])
 
-# Callback will take the url pathname as input and return the layout specific to that app for insertion into lowest Div
 @app.callback(Output('page-content', 'children'),
               [Input('url', 'pathname')])
 
