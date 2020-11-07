@@ -1,0 +1,98 @@
+X,Y,gid,Name,description,altitudeMode,Nghd_Name,Suburban_Area,NGHD_ID,Field_1
+-106.491977177207,52.1438722343726,1,Corman Park Planning District,,clampToGround,Corman Park Planning District,N/A,000,Corman Park Planning District
+-106.795069797192,52.1345906037132,3,Blairmore Development Area,,clampToGround,Blairmore Development Area,Blairmore,903,Blairmore Development Area
+-106.557143941691,52.1252168650436,6,Brighton,,clampToGround,Brighton,Holmwood,080,Brighton
+-106.628689833662,52.0960941109394,44,Nutana Park,,clampToGround,Nutana Park,Nutana,039,Nutana Park
+-106.550557701078,52.1045607090028,9,Hillcrest Management Area,,clampToGround,Hillcrest Management Area,Lakewood,719,Hillcrest Management Area
+-106.53946669399,52.1582218086639,12,U of S Lands East Management Area,,clampToGround,U of S Lands East Management Area,Holmwood,718,U of S Lands East Management Area
+-106.558553486128,52.1464313971307,13,Willowgrove,,clampToGround,Willowgrove,University Heights,062,Willowgrove
+-106.630477632906,52.1080510154855,49,Holliston,,clampToGround,Holliston,Nutana,036,Holliston
+-106.564784691158,52.0979714797328,15,Lakewood Suburban Centre,,clampToGround,Lakewood Suburban Centre,Lakewood,068,Lakewood Suburban Centre
+-106.595573348704,52.122127937739,19,College Park,,clampToGround,College Park,Lakewood,046,College Park
+-106.655495983552,52.1800592383214,20,Hudson Bay Industrial,,clampToGround,Hudson Bay Industrial,Riel Industrial,112,Hudson Bay Industrial
+-106.700049108226,52.1729291025655,22,Airport Management Area,,clampToGround,Airport Management Area,Riel Industrial,717,Airport Management Area
+-106.680520190905,52.1586038488322,23,Airport Business Area,,clampToGround,Airport Business Area,Riel Industrial,101,Airport Business Area
+-106.621921479638,52.1814053557125,25,Silverwood Heights,,clampToGround,Silverwood Heights,Lawson,056,Silverwood Heights
+-106.688320042729,52.1105245318157,29,Holiday Park,,clampToGround,Holiday Park,Confederation,001,Holiday Park
+-106.689359828109,52.1460957800443,31,Hudson Bay Park,,clampToGround,Hudson Bay Park,Confederation,018,Hudson Bay Park
+-106.67577202269,52.1369034898438,33,Caswell Hill,,clampToGround,Caswell Hill,Core Neighbourhood Area,017,Caswell Hill
+-106.589759182582,52.1424648931159,35,Forest Grove,,clampToGround,Forest Grove,University Heights,049,Forest Grove
+-106.61988958442,52.1257253064944,38,U of S Lands South Management Area,,clampToGround,U of S Lands South Management Area,University Heights,716,U of S Lands South Management Area
+-106.640584669103,52.1215987128805,39,Varsity View,,clampToGround,Varsity View,Core Neighbourhood Area,033,Varsity View
+-106.59496029318,52.0972032295653,41,Lakeview,,clampToGround,Lakeview,Lakewood,044,Lakeview
+-106.613659693998,52.1096795410707,42,Brevoort Park,,clampToGround,Brevoort Park,Nutana,042,Brevoort Park
+-106.622310478874,52.079726059032,43,Stonebridge,,clampToGround,Stonebridge,Nutana,037,Stonebridge
+-106.662528120284,52.0899677056328,46,CN Industrial,,clampToGround,CN Industrial,Nutana,103,CN Industrial
+-106.640914120087,52.0983698087819,47,Adelaide/Churchill,,clampToGround,Adelaide/Churchill,Nutana,038,Adelaide/Churchill
+-106.64751101542,52.1109124142698,48,Haultain,,clampToGround,Haultain,Nutana,032,Haultain
+-106.666002418254,52.1386697425913,51,Central Industrial,,clampToGround,Central Industrial,Lawson,102,Central Industrial
+-106.571259928825,52.1335661558657,52,Arbor Creek,,clampToGround,Arbor Creek,University Heights,059,Arbor Creek
+-106.569796963745,52.1404413102225,53,Erindale,,clampToGround,Erindale,University Heights,060,Erindale
+-106.592912148557,52.1595630924316,55,Silverspring,,clampToGround,Silverspring,University Heights,061,Silverspring
+-106.56746539756,52.1678061883939,56,Evergreen,,clampToGround,Evergreen,University Heights,069,Evergreen
+-106.61376875098,52.1037598187778,57,Nutana Suburban Centre,,clampToGround,Nutana Suburban Centre,Nutana,041,Nutana Suburban Centre
+-106.613727311794,52.0971317314815,59,Eastview,,clampToGround,Eastview,Nutana,040,Eastview
+-106.676332745109,52.0998679359508,60,Exhibition,,clampToGround,Exhibition,Nutana,028,Exhibition
+-106.655749306295,52.103780054339,61,Queen Elizabeth,,clampToGround,Queen Elizabeth,Nutana,030,Queen Elizabeth
+-106.613444316827,52.1199802558038,64,Greystone Heights,,clampToGround,Greystone Heights,Nutana,043,Greystone Heights
+-106.718262030835,52.1397436965337,71,Massey Place,,clampToGround,Massey Place,Confederation,009,Massey Place
+-106.618840714043,52.17117201456,66,Lawson Heights,,clampToGround,Lawson Heights,Lawson,055,Lawson Heights
+-106.637312807771,52.1693417973764,67,Lawson Heights Suburban Centre,,clampToGround,Lawson Heights Suburban Centre,Lawson,054,Lawson Heights Suburban Centre
+-106.687038744092,52.1355423048293,69,Westmount,,clampToGround,Westmount,Core Neighbourhood Area,016,Westmount
+-106.704944418703,52.1354745892794,70,Mount Royal,,clampToGround,Mount Royal,Confederation,015,Mount Royal
+-106.717077299756,52.1547112871429,73,Hampton Village,,clampToGround,Hampton Village,Confederation,010,Hampton Village
+-106.662640129928,52.1280539265189,76,Downtown,,clampToGround,Downtown,Core Neighbourhood Area,025,Downtown
+-106.701244057575,52.1216192728498,77,Pleasant Hill,,clampToGround,Pleasant Hill,Core Neighbourhood Area,013,Pleasant Hill
+-106.694044636136,52.1207515000959,78,West Industrial,,clampToGround,West Industrial,Confederation,111,West Industrial
+-106.720711546306,52.126405411224,80,Confederation Suburban Centre,,clampToGround,Confederation Suburban Centre,Confederation,057,Confederation Suburban Centre
+-106.730329640735,52.1470908881377,81,Dundonald,,clampToGround,Dundonald,Confederation,007,Dundonald
+-106.739820524654,52.1383771286283,82,Confederation Park,,clampToGround,Confederation Park,Confederation,006,Confederation Park
+-106.645800678522,52.1485999496838,84,North Park,,clampToGround,North Park,Lawson,051,North Park
+-106.654228844428,52.1373871430717,85,City Park,,clampToGround,City Park,Core Neighbourhood Area,050,City Park
+-106.740570072583,52.1332621102993,88,Pacific Heights,,clampToGround,Pacific Heights,Confederation,005,Pacific Heights
+-106.753364196,52.1040532062182,87,CN Yards Management Area,,clampToGround,CN Yards Management Area,Confederation,711,CN Yards Management Area
+-106.658356268217,52.0751672730538,90,The Willows,,clampToGround,The Willows,Nutana,031,The Willows
+-106.577555042604,52.1206060184325,17,College Park East,,clampToGround,College Park East,Lakewood,047,College Park East
+-106.758095763105,52.1257461751973,93,Blairmore Suburban Centre,,clampToGround,Blairmore Suburban Centre,Blairmore,020,Blairmore Suburban Centre
+-106.741688747197,52.1163883881458,96,Agpro Industrial,,clampToGround,Agpro Industrial,Confederation,107,Agpro Industrial
+-106.772701492649,52.1129551864391,97,South West Development Area,,clampToGround,South West Development Area,Blairmore,907,South West Development Area
+-106.759496276651,52.1404295447394,2,Kensington,,clampToGround,Kensington,Blairmore,021,Kensington
+-106.749557645522,52.151361239075,4,Elk Point,,clampToGround,Elk Point,Blairmore,022,Elk Point
+-106.74907954851,52.123592074563,5,Parkridge,,clampToGround,Parkridge,Confederation,004,Parkridge
+-106.526106521822,52.1327021105441,7,Holmwood Development Area,,clampToGround,Holmwood Development Area,Holmwood,904,Holmwood Development Area
+-106.566586941647,52.1080509567898,8,Briarwood,,clampToGround,Briarwood,Lakewood,064,Briarwood
+-106.545786233543,52.09348345713,10,Rosewood,,clampToGround,Rosewood,Lakewood,063,Rosewood
+-106.545585474624,52.1794449118632,11,Aspen Ridge,,clampToGround,Aspen Ridge,University Heights,070,Aspen Ridge
+-106.578914843221,52.0952952085344,14,Lakeridge,,clampToGround,Lakeridge,Lakewood,058,Lakeridge
+-106.589855958046,52.1074882795747,16,Wildwood,,clampToGround,Wildwood,Lakewood,045,Wildwood
+-106.591500153496,52.1344504865337,18,Sutherland Industrial,,clampToGround,Sutherland Industrial,University Heights,109,Sutherland Industrial
+-106.657895520611,52.164183772633,21,North Industrial,,clampToGround,North Industrial,Riel Industrial,106,North Industrial
+-106.660204009481,52.1508458121689,24,Kelsey - Woodlawn,,clampToGround,Kelsey - Woodlawn,Lawson,105,Kelsey - Woodlawn
+-106.644745296629,52.1984616339962,26,Marquis Industrial,,clampToGround,Marquis Industrial,Riel Industrial,113,Marquis Industrial
+-106.696235402244,52.105691878575,27,Gordie Howe Management Area,,clampToGround,Gordie Howe Management Area,Confederation,713,Gordie Howe Management Area
+-106.605391687015,52.1393312167542,34,Sutherland,,clampToGround,Sutherland,University Heights,048,Sutherland
+-106.720942256539,52.0956785181837,28,SaskPower Management Area,,clampToGround,SaskPower Management Area,Confederation,712,SaskPower Management Area
+-106.710763259503,52.1096654969516,30,South West Industrial,,clampToGround,South West Industrial,Confederation,108,South West Industrial
+-106.676131728143,52.1492317628488,32,Mayfair,,clampToGround,Mayfair,Lawson,019,Mayfair
+-106.604689894922,52.1613166434114,36,U of S Lands North Management Area,,clampToGround,U of S Lands North Management Area,University Heights,714,U of S Lands North Management Area
+-106.625821960753,52.1409020075829,37,U of S Lands Management Area,,clampToGround,U of S Lands Management Area,University Heights,715,U of S Lands Management Area
+-106.651994003233,52.1220785779715,40,Nutana,,clampToGround,Nutana,Core Neighbourhood Area,026,Nutana
+-106.604216784246,52.0807968157749,45,South East Development Area,,clampToGround,South East Development Area,Lakewood,901,South East Development Area
+-106.66818111232,52.1111036965768,50,Buena Vista,,clampToGround,Buena Vista,Nutana,027,Buena Vista
+-106.576099153528,52.147536715177,54,University Heights Suburban Centre,,clampToGround,University Heights Suburban Centre,University Heights,067,University Heights Suburban Centre
+-106.628670518324,52.1183260774778,58,Grosvenor Park,,clampToGround,Grosvenor Park,Nutana,035,Grosvenor Park
+-106.656182695745,52.0951212786242,62,Avalon,,clampToGround,Avalon,Nutana,029,Avalon
+-106.686790575494,52.0979740751132,63,Diefenbaker Management Area,,clampToGround,Diefenbaker Management Area,Nutana,710,Diefenbaker Management Area
+-106.675174422914,52.0903642947971,65,South Development Area,,clampToGround,South Development Area,Nutana,908,South Development Area
+-106.630793520411,52.1609629862032,68,River Heights,,clampToGround,River Heights,Lawson,053,River Heights
+-106.705557048873,52.1476011598793,72,Westview,,clampToGround,Westview,Confederation,008,Westview
+-106.68577006063,52.1181221872023,74,King George,,clampToGround,King George,Core Neighbourhood Area,012,King George
+-106.677850643263,52.1253528792801,75,Riversdale,,clampToGround,Riversdale,Core Neighbourhood Area,014,Riversdale
+-106.711949059354,52.1226554926234,79,Meadowgreen,,clampToGround,Meadowgreen,Confederation,011,Meadowgreen
+-106.64196397253,52.1539461991702,83,Richmond Heights,,clampToGround,Richmond Heights,Lawson,052,Richmond Heights
+-106.731049492603,52.1113685742403,95,Montgomery Place,,clampToGround,Montgomery Place,Confederation,002,Montgomery Place
+-106.573224767753,52.1883091636025,86,University Heights Development Area,,clampToGround,University Heights Development Area,University Heights,902,University Heights Development Area
+-106.730740104218,52.1223335852499,89,Fairhaven,,clampToGround,Fairhaven,Confederation,003,Fairhaven
+-106.695830976143,52.2129644331974,91,North West Development Area,,clampToGround,North West Development Area,Riel Industrial,906,North West Development Area
+-106.679388473685,52.1923919413957,92,Agriplace,,clampToGround,Agriplace,Riel Industrial,100,Agriplace
+-106.629565171786,52.2162971323344,94,North Development Area,,clampToGround,North Development Area,Riel Industrial,905,North Development Area
