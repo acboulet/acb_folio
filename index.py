@@ -16,7 +16,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 #from app import app
-from apps import home, app3#, app2
+from apps import home, app3, app4#, app2
 
 A_style={'paddingRight':'30px',
         'color':'#202020',
@@ -52,7 +52,9 @@ app.layout = html.Div([
         children=[
             html.A('Home', className="home", href='/', style=A_style ),
             # html.A('SDM Calculator', className="nav-stocker", href='/app1',style=A_style),
-            html.A('SDM Predictor', className="nav-DNA", href='/app3', style=A_style)]),
+            html.A('SDM Predictor', className="nav-DNA", href='/app3', style=A_style),
+            html.A('Saskatoon Map', className="sask-Map", href='/app4', style=A_style)]),
+            
             ],style={'background-color':'#9c805e',
                         'height':'105px'}),
     dcc.Location(id='url', refresh=False),
@@ -65,6 +67,8 @@ app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/app3':
         return app3.layout
+    elif pathname == '/app4':
+        return app4.layout
     # elif pathname == '/app3':
     #     return app3.layout
     else:
